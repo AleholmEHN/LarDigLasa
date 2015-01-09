@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Lär dig läsa ABC</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_setup">Lär dig läsa ABC</string>
+    
+    <string name="opponentPlay">Spela mot annan spelare</string>
+    <string name="computerPlayer">Spela mot datorn</string>
+    <string name="Name1">Spelare 1</string>
+    <string name="Name2">Spelare 2</string>
+    <string name="txtContinue">Spela igen</string>
+    <string name="txtPlayAgain">Spela igen</string>
+    <string name="txtExit">Avsluta</string>
+    <string name="playRules">Spelet går ut på att samla bokstavsbrickor.\n
+        Spelaren som är i tur (namnet är färgmarkerat) slår med tärningen genom att trycka på den.\n
+        Om man får 1-5 flyttar man det antal steg man fått på spelplanen.\n
+        Om man får stjärna får man flytta till vilken spelruta man vill.\n
+        När man flyttat till en spelruta får man först vända upp en bokstavsbricka i underkant av spelplanen. (färgmarkerade) \n
+        Därefter får man se om den bokstav man står på finns uppvänd bland brickorna längst ned.(färgmarkerat om bokstaven finns med)\n
+        I så fall ska man trycka på den för att flytta den till sin del av spelplanen.\n
+        De brickor man kan välja på är färgmarkerade. Om ingen bokstav kan väljas går turen över till den andra spelaren \n
+        När alla bokstavsbrickor är tagna har den vunnit som har flest.\n
+        Spelet är för två spelare eller kan man spela mot datorn.</string>
+    
+
+</resources>

@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White" >
+
+        <ImageView
+            android:id="@+id/imageTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/imageTitle"
+            android:adjustViewBounds="true"
+            android:src="@drawable/title" />
+        <requestFocus />
+
+        <EditText
+            android:id="@+id/editPlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagePlayer2"
+            android:layout_alignLeft="@+id/editPlayer1"
+            android:ems="10"
+            android:hint="@string/Name2"
+            android:maxLength="20"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imagePlayer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imagePlayer1"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/spelare2" />
+
+        <ImageButton
+            android:id="@+id/imageBtnRules"
+            style="@style/AppTheme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/imagePlayer1"
+            android:layout_below="@+id/imagePlayer2"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/regler" />
+
+        <RadioGroup
+            android:id="@+id/SelectOpponent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/editPlayer1"
+            android:layout_toRightOf="@+id/editPlayer1"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/radioBtnComputer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/computerPlayer"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+
+            <RadioButton
+                android:id="@+id/radioBtnOpponent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/opponentPlay"
+                android:textColor="@color/TextColor"
+                android:textSize="20sp" />
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/imagePlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageTitle"
+            android:layout_marginTop="40dp"
+            android:adjustViewBounds="true"
+            android:baselineAlignBottom="false"
+            android:src="@drawable/spelare1" />
+
+        <EditText
+            android:id="@+id/editPlayer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imagePlayer1"
+            android:layout_marginBottom="21dp"
+            android:layout_marginLeft="76dp"
+            android:layout_toRightOf="@+id/imagePlayer1"
+            android:ems="10"
+            android:hint="@string/Name1"
+            android:maxLength="20"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageBtnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editPlayer2"
+            android:layout_alignTop="@+id/imageBtnRules"
+            android:background="@android:color/transparent"
+            android:src="@drawable/start" />
+
+        <ImageButton
+            android:id="@+id/imageBtnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/SelectOpponent"
+            android:layout_alignTop="@+id/imageBtnStart"
+            android:background="@android:color/transparent"
+            android:src="@drawable/exit" />
+        
+</RelativeLayout>
